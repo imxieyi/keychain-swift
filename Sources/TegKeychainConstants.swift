@@ -41,7 +41,7 @@ public struct KeychainSwiftConstants {
   public static var secMatchLimitAll : String { return toString(kSecMatchLimitAll) }
     
     /// A key whose value indicates whether to treat macOS keychain items like iOS keychain items.
-    @available(iOS 13.0, macOS 10.15, *)
+    @available(iOS 13.0, macOS 10.15, tvOS 13.0, *)
     public static var secUseDataProtectionKeychain : String { return toString(kSecUseDataProtectionKeychain ) }
     
   static func toString(_ value: CFString) -> String {

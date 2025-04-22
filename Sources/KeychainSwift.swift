@@ -325,7 +325,7 @@ open class KeychainSwift {
     var result: [String: Any] = items
     result[KeychainSwiftConstants.accessGroup] = accessGroup
       
-      if #available(iOS 13.0, macOS 10.15, *) {
+      if #available(iOS 13.0, macOS 10.15, tvOS 13.0, *) {
           // behave like iOS keychain
           result[KeychainSwiftConstants.secUseDataProtectionKeychain] = true
       }
